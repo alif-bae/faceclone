@@ -13,7 +13,7 @@
 Install Ruby & Rails. Clone this repo using the following command:
   
 ```
-git clone https://github.com/alifawad1994/sproj-faceclone
+git clone https://github.com/alifawad1994/faceclone
 cd socify
 ```
 Then resolve dependencies using bundler:
