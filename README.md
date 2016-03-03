@@ -14,7 +14,7 @@ Install Ruby & Rails. Clone this repo using the following command:
   
 ```
 git clone https://github.com/alifawad1994/faceclone
-cd socify
+cd faceclone
 ```
 Then resolve dependencies using bundler:
 
