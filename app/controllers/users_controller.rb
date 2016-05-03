@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_user
+  before_action :authenticate_user!
   before_action :check_ownership, only: [:edit, :update]
   respond_to :html, :js
 
@@ -43,4 +43,5 @@ class UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
+
 end

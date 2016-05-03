@@ -11,6 +11,10 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :events
 
+  # for chat feature
+  has_many :conversations, :foreign_key => :sender_id
+
+
   mount_uploader :avatar, AvatarUploader
   mount_uploader :cover, AvatarUploader
 

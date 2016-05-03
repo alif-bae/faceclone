@@ -16,6 +16,8 @@
 //= require bindWithDelay
 //= require jquery.datetimepicker
 //= require_tree .
+//= require chat
+//= require private_pub
 
 $(document).ready(function(){
   $("#event_when").datetimepicker({

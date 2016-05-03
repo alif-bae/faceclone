@@ -53,6 +53,10 @@ gem 'faker'
 gem 'populator'
 gem 'auto_html'
 
+#for chat functionality
+gem 'private_pub'
+gem 'thin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
