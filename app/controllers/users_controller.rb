@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
   def show
     @activities = PublicActivity::Activity.where(owner: @user).order(created_at: :desc).paginate(page: params[:page], per_page: 10)
+    @friends = @user.following_users.paginate(page: params[:page])
+
   end
 
   def edit
@@ -24,6 +26,7 @@ class UsersController < ApplicationController
 
   def friends
     @friends = @user.following_users.paginate(page: params[:page])
+    puts @friends.inspect
   end
 
   def followers

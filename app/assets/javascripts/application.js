@@ -13,11 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require private_pub
+//= require chat
 //= require bindWithDelay
 //= require jquery.datetimepicker
 //= require_tree .
-//= require chat
-//= require private_pub
 
 $(document).ready(function(){
   $("#event_when").datetimepicker({
