@@ -38,3 +38,8 @@ config/initializers/secret_token.rb
 bower.json
 # Ignore pow environment settings
 .powenv
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
