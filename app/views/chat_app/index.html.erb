@@ -1,15 +1,12 @@
+<!-- <%= debug @friends %> -->
 <div class="row">
-  <div class="col-md-5">
-    <div style="height: 300px; overflow-y: auto;">
-      <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <div class="panel-heading">Registered Users</div>
+  <div class="col-md-4">
+      <div class="well">
 
         <!-- Table -->
         <table class="table">
           <thead>
           <tr>
-            <th>#</th>
             <th>Name</th>
             <th></th>
           </tr>
@@ -19,7 +16,7 @@
               <tr>
                 <td><%= user.name %></td>
                 <td>
-                  <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
+                  <%= link_to "Send Message", "#", class: "btn btn-primary btn-xs start-conversation",
                               "data-sid" => current_user.id, "data-rip" => user.id %>
                 </td>
               </tr>
@@ -33,7 +30,6 @@
     <hr>
     <h3>Your Conversations</h3>
 
-    <div style="height: 400px; overflow-y: auto;">
       <% if @conversations.any? %>
           <ul class="media-list">
             <% @conversations.each do |conversation| %>

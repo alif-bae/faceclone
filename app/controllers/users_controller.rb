@@ -26,11 +26,13 @@ class UsersController < ApplicationController
 
   def friends
     @friends = @user.following_users.paginate(page: params[:page])
-    puts @friends.inspect
   end
 
   def followers
     @followers = @user.user_followers.paginate(page: params[:page])
+  end
+
+  def wall_post
   end
 
   private
