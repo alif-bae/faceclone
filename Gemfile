@@ -1,18 +1,11 @@
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'sqlite3'
+gem 'puma'
 gem 'rails', '4.1.6'
-
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Use twitter bootstrap sass
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
